@@ -1,0 +1,75 @@
+#hr {
+    color: #04AA6D;
+    text-align: center;
+    font-size: 48px;
+}
+
+body {
+    background-image: url('https://images.pexels.com/photos/1720957/pexels-photo-1720957.jpeg?auto=compress&cs=tinysrgb&w=6000');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+ul {
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: teal;
+}
+
+#heading {
+    color: #04AA6D;
+}
+
+#para {
+    color: teal;
+    font-size: 20px;
+}
+
+#bdy {
+    color: black;
+    font-size: 20px;
+}
+
+table,
+th {
+    background-color: teal;
+    width: 65%;
+}
+
+,
+td {
+    border: 1px solid white;
+}
+
+#end {
+    color: #04AA6D;
+}
+
+#vid {
+    color: orange;
+}
