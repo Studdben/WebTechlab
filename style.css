@@ -1,0 +1,14 @@
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: hotpink;
+}
+
+body {
+    background-image: url('https://images.pexels.com/photos/1720957/pexels-photo-1720957.jpeg?auto=compress&cs=tinysrgb&w=6000');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
