@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Expt5.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body class="bg-dark">
+    <h1 class=" text-center p-5 text-warning ">JAVASCRIPT DOM ELEMENTS AND EVENTS</h1>
+    <hr class="border border-warning border-2 opacity-50 ">
+
+    <!-- Q1 -->
+    <h3 class="text-center text-white bg mt-5 ">1. Shortest And Longest Word</h3>
+    <div class="container col-sm-6 mt-5 text-bg-primary "><br> Enter Sentence: <input type="text " id="lgth " class="form-control ">
+
+        <div class="text-center ">
+            <button class="btn btn-outline-warning mt-5 " onclick="length(); ">Submit</button> </div><br> Longest string is : <input type="text " id="res1 " class="form-control ">
+        <br>
+        <br> Shortest string is : <input type="text " id="res2 " class="form-control ">
+        <br><br>
+    </div>
+
+    <!-- Q2 -->
+    <section>
+        <hr class="border border-warning border-2 opacity-50 ">
+        <h3 class="text-center text-white bg mt-5 ">2. Calculate your Body Mass Index (BMI)!</h3>
+        <div class="container col-sm-6 mt-5 text-bg-success "><br> Weight (in kilograms): &nbsp;&nbsp;<input type='text' id='weight' class="form-control "><br><br> Height (in meters): &nbsp;&nbsp;<input type='text' id='height' class="form-control "><br>
+
+            <div class="text-center "> <button class="btn btn-outline-warning mt-5 " onclick="calculate(); ">Get BMI!</button></div><br>
+
+            <p>
+                Your BMI is :<span id='score'> </span> <br> Your body type is <span id='type'></span>
+            </p>
+            <br>
+        </div>
+        <hr class="border border-warning border-2 opacity-50 ">
+    </section>
+
+    <!-- Q3 -->
+    <section>
+        <h3 class="text-center text-white bg mt-5 ">3. Fruit Farm</h3>
+        <div class="container col-sm-3 mt-5 ">
+            <label for="height " class="form-label text-white ">Enter Height</label>
+            <input type="text " id="height " class="form-control ">
+            <label for="width " class="form-label text-white mt-4 ">Enter Width</label>
+            <input type="text " id="width " class="form-control ">
+            <div class="text-center ">
+                <button class="btn btn-outline-warning mt-5 mb-5 " onclick="q3() ">Submit</button>
+            </div>
+        </div>
+        <div id="garden " class="text-center mb-5 "></div>
+        <hr class="border border-warning border-2 opacity-50 ">
+    </section>
+    <!-- Q4 -->
+    <section>
+        <h3 class="text-center text-white bg mt-5 ">4. Convert</h3>
+        <div class="container col-sm-6 mt-5 text-bg-success "><br> Enter the amount: <input type="text " id="data ">
+            <br><br> &nbsp;&nbsp;&nbsp;&nbsp;
+            <select id="from "> 
+                  <option value="IR ">Indian Rupee</option> 
+                  <option value="DOLL ">US Dollar</option> 
+                  </select> &nbsp; &nbsp; to
+            <select id="to ">
+               <option value="DOLL "> US Dollar </option> 
+                <option value="IR "> Indian Rupee </option>
+             </select>
+            <br>
+
+            <button class="btn btn-outline-warning mt-5 " onclick="convert(); ">Calculate</button>
+            <br> Converted Value: <input type="text " id="ans "><br>
+        </div>
+        <hr class="border border-warning border-2 opacity-50 ">
+    </section>
+
+
+    <br>
+    <br>
+    <!-- Q5 -->
+    <section>
+
+        <h3 class="text-center text-white bg mt-5 ">5. Coin Flip</h3>
+        <div class="container col-sm-3 mt-5 ">
+            <div class="text-center ">
+                <button class="btn btn-outline-warning btn-lg mb-5 " onclick="flip() ">Flip</button>
+            </div>
+        </div>
+        <div class="text-center mb-5 " id="coin "></div>
+        <h5 id="count " class="text-center text-warning "></h5>
+        <hr class="border border-warning border-2 opacity-50 ">
+    </section>
+    <!-- Q6 -->
+    <section id="Q6">
+        <h3 class="text-center text-white bg mt-5">6. Cake Order Form</h3>
+        <div class="container col-sm-3 mt-5">
+            <label for="cake" class="form-label text-white">Choose Cake</label>
+            <select id="cake" class="form-select">
+                        <option value="Small" selected>Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>                    
+                    </select>
+
+            <label for="tip" class="form-label text-white mt-3">Choose Tip</label>
+            <select id="tip" class="form-select">
+                <option value="0" selected>None</option>
+                <option value="10">10%</option>
+                <option value="15">15%</option>
+                <option value="20">20%</option>                    
+            </select>
+            <div class="text-center">
+                <button class="btn btn-outline-warning mt-5 mb-5" onclick="cake()">Calculate Order</button>
+            </div>
+        </div>
+        <h5 id="cost" class="text-center text-warning mb-5"></h5>
+        <hr class="border border-warning border-2 opacity-50">
+    </section>
+</body>
+
+</html>
