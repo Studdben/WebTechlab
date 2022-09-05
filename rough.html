@@ -69,31 +69,32 @@
     </section>
 
     <section id="Q4">
+        <h3 class="text-center text-white bg mt-5">4. Currency Converter</h3>
         <div class="container col-sm-3 mt-5">
-            <h3 class="text-center text-white bg mt-5">4. Currency Converter</h3>
 
             <label for="value" class="form-label text-white ">Enter Value</label>
             <input type="text" id="value" class="form-control">
-
-            <label for="from" class="form-label text-white">From</label>
+            <br>
+            <label for="from" class="form-label text-white">Choose From</label>
             <select id="from" class="form-select">
                             <option value="INR" selected>INR</option>
                             <option value="USD">USD</option>                    
                         </select>
+            <br>
 
-            <label for="to" class="form-label text-white mt-3">To</label>
+            <label for="to" class="form-label text-white mt-3">Convert To</label>
             <select id="to" class="form-select">
                             <option value="USD" selected>USD</option>
                             <option value="INR">INR</option>                    
                         </select>
 
-            <div class="text-center ">
-                <button class="btn btn-outline-primary mt-5 mb-5" onclick="convert()">Convert</button>
-            </div>
 
-            <h5 id="convert" class="text-center text-warning mb-5"></h5>
+            <div class="text-center ">
+                <button class="btn btn-outline-warning mt-5 mb-5" onclick="convert()">Convert</button>
+            </div>
         </div>
-        <hr class="border border-primary border-2 opacity-50">
+        <h5 id="convertedValue" class="text-center text-warning mb-5"></h5>
+        <hr class="border border-warning border-2 opacity-50">
     </section>
 
     <section id="Q5">
