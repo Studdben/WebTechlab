@@ -65,19 +65,19 @@ function fruit() {
 }
 
 function convert() {
-    const from = document.getElementById("from").value;
+   const from = document.getElementById("from").value;
     const to = document.getElementById("to").value;
     let value = parseFloat(document.getElementById("value").value);
     if (from == "INR" && to == "USD") {
         value = value * 0.013;
     } else if (from == "USD" && to == "INR") {
         value = value * 79.71;
-    } else if (from == "USD" && to == "USD") {
-        document.getElementById("convertedValue").innerHTML = value;
-    } else if (from == "INR" && to == "INR") {
-        document.getElementById("convertedValue").innerHTML = value;
     } else
-        document.getElementById("convert").innerHTML = "Equivalent " + to + " value is " + value.toFixed(2);
+        value = "Choose Properly!"
+    if (value == "Choose Properly!")
+        document.getElementById("convertedValue").innerHTML = value;
+    else
+        document.getElementById("convertedValue").innerHTML = "Equivalent " + to + " value is " + value.toFixed(2);
 }
 
 let hc = 0,
