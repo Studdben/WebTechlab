@@ -1,0 +1,49 @@
+* {
+    margin: 0px;
+}
+
+#lane1,
+#lane2,
+#lane3,
+#lane4 {
+    padding: 30px 0 30px;
+    position: relative;
+    height: 80px;
+}
+
+img {
+    /* transform: rotateX(0deg); */
+    width: 150px;
+    height: auto;
+}
+
+.trapezoid {
+    border-bottom: 50px solid #555;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 125px;
+    margin-left: 30px;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.tyre {
+    margin-right: 950px;
+}
+
+.rectangle {
+    height: 60px;
+    width: 277px;
+    background-color: #555;
+}
+
+.lane1 {
+    position: relative;
+}
