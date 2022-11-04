@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expt9B
+    </title>
+    <style>
+        body {
+            background-image: url('https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&w=6000');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        hr {
+            border-radius: 30px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+    <script>
+        var ap = angular.module('q2', ['ngRoute']);
+        ap.config(function($routeProvider) {
+            $routeProvider.when('/one', {
+                    templateUrl: '3002.html'
+                })
+                .when('/two', {
+                    templateUrl: '2110.html'
+                })
+                .when('/three', {
+                    templateUrl: '2064.html'
+                })
+                .when('/four', {
+                    templateUrl: '2065.html'
+                });
+
+        });
+    </script>
+</head>
+
+<body>
+    <h1 align="center" style="color:antiquewhite">AngularJS Routing</h2>
+
+        <hr>
+        <div ng-app="q2" align="center">
+            <h2 align="center" style="color: teal;">Click Any Register Number to view its profile!!</h4>
+                <a href="#!one">URK20CS3002</a><br><br>
+                <a href="#!two">URK20CS2110</a><br><br>
+                <a href="#!three">URK20CS2064</a><br><br>
+                <a href="#!four">URK20CS2065</a><br><br>
+                <div ng-view></div>
+        </div>
+</body>
+
+</html>
